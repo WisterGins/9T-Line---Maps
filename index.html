@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>9T Line – Maps</title>
+<meta name="description" content="9T Line: a rhythm game in your browser. Turn on the beat.">
+<style>
+  :root { --line: rgba(255,255,255,.13); --muted: rgba(255,255,255,.56); }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; background: #07080e; color: #fff;
+    font: 14px/1.5 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; }
+  body { display: flex; align-items: center; justify-content: center; padding: 24px 16px; min-height: 100vh; }
+  .card { width: 100%; max-width: 460px; background: rgba(8,10,20,.86); border: 1px solid var(--line);
+    border-radius: 10px; padding: 26px 24px; box-shadow: 0 14px 44px rgba(0,0,0,.35); }
+  h1 { margin: 0; font-size: 20px; letter-spacing: .22em; text-transform: uppercase; text-shadow: 0 0 5px rgba(255,255,255,.45); }
+  h1::after { content: ""; display: block; width: 44px; height: 3px; margin-top: 10px; border-radius: 2px; background: #fff;
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.9), 0 0 14px 2px rgba(170,205,255,.4); }
+  .sub { margin: 10px 0 20px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+  .map { display: flex; align-items: center; gap: 14px; padding: 14px; border: 1px solid var(--line); border-radius: 8px;
+    color: #fff; text-decoration: none; background: rgba(255,255,255,.03); transition: border-color .15s, box-shadow .15s; }
+  .map:hover, .map:focus-visible { border-color: rgba(255,255,255,.55); box-shadow: 0 0 12px rgba(255,255,255,.12); outline: none; }
+  .map b { display: block; font-size: 15px; letter-spacing: .03em; }
+  .map small { color: var(--muted); }
+  .play { margin-left: auto; padding: 8px 14px; border-radius: 6px; background: #fff; color: #0a0c14; font-weight: 800;
+    font-size: 11px; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap;
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.9), 0 0 14px 2px rgba(170,205,255,.4); }
+  .how { margin: 18px 0 0; color: var(--muted); font-size: 12px; }
+  .how b { color: #fff; }
+  footer { margin-top: 20px; color: rgba(255,255,255,.34); font-size: 11px; }
+</style>
+</head>
+<body>
+<main class="card">
+  <h1>9T Line</h1>
+  <p class="sub">Turn on the beat · Rẽ theo nhịp</p>
+
+  <a class="map" href="yoru-ni-kakeru/">
+    <div>
+      <b>Yoru ni Kakeru</b>
+      <small>YOASOBI · 395 turns · 1:44</small>
+    </div>
+    <span class="play">▶ Play</span>
+  </a>
+
+  <p class="how">
+    <b>PC:</b> Space / X / Z to turn · <b>Phone:</b> tap the screen.<br>
+    <b>Máy tính:</b> Space / X / Z để rẽ · <b>Điện thoại:</b> chạm màn hình.
+  </p>
+  <footer>Music: YOASOBI – 夜に駆ける (Yoru ni Kakeru). All rights to the song belong to its owners. · Game by WisterGins</footer>
+</main>
+</body>
+</html>
